@@ -1,0 +1,177 @@
+/* Estilos base para Inventary Tech */
+
+:root {
+    --main-bg: #f8f9fa;
+    --header-bg: #222;
+    --header-text: #fff;
+    --footer-bg: #222;
+    --footer-text: #fff;
+    --primary: #007bff;
+    --card-bg: #fff;
+    --card-border: #e0e0e0;
+    --placeholder: #d3d3d3;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--main-bg);
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 1rem 0;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.header__title {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.nav__link {
+    color: var(--header-text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav__link:hover {
+    color: var(--primary);
+}
+
+/* Barra de búsqueda en header */
+.header__search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0.15rem 0.7rem 0.15rem 1rem;
+    margin: 0 1.5rem;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.header__search-input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    color: #222;
+    min-width: 160px;
+}
+.header__search-btn {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 0.2rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+.header__search-btn:hover {
+    color: var(--primary);
+}
+
+/* Carrusel (placeholder) */
+.carousel {
+    background: var(--placeholder);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.carousel__placeholder {
+    color: #666;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* Sección principal */
+.main {
+    min-height: 60vh;
+}
+
+/* Productos */
+.products__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+.product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+}
+.product-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+}
+.product-card__image {
+    background: var(--placeholder);
+    height: 160px;
+    width: 100%;
+    display: block;
+}
+.product-card__info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.product-card__name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.product-card__price {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 600;
+}
+.product-card__stock {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
