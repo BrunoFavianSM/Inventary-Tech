@@ -1,161 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventary Tech</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inventary Tech — Inventario</title>
+    <meta name="description" content="Panel de inventario moderno y profesional para Inventary Tech">
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome CDN para íconos -->
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- placeholder favicon -->
 </head>
 <body>
-    <!-- Header: Nombre del proyecto y menú de navegación -->
     <header class="header">
-        <div class="container header__content">
-            <h1 class="header__title">Inventary Tech</h1>
-            <!-- Barra de búsqueda (solo maqueta, no funcional) -->
-            <form class="header__search" action="#" method="get" autocomplete="off">
-                <input type="text" class="header__search-input" placeholder="Buscar productos..." name="q" />
-                <button type="submit" class="header__search-btn" tabindex="-1">
-                    <i class="fas fa-search"></i>
-                </button>
+        <div class="container header__wrap">
+            <div class="brand">
+                <div class="brand__mark" aria-hidden="true">IT</div>
+                <div>
+                    <h1 class="brand__title">Inventary Tech</h1>
+                    <p class="brand__subtitle">Control de inventario</p>
+                </div>
+            </div>
+
+            <form class="search" role="search" aria-label="Buscar productos">
+                <label for="q" class="visually-hidden">Buscar</label>
+                <input id="q" name="q" type="search" placeholder="Buscar productos, SKU o categoría..." />
+                <button aria-label="Buscar"><i class="fas fa-search"></i></button>
             </form>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="#" class="nav__link">Inicio</a></li>
-                    <li><a href="#productos" class="nav__link">Productos</a></li>
-                    <li><a href="#Registro" class="nav__link">Registro de ventas</a></li>
-                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
-                    <li><a href="#logout" class="nav__link">Cerrar sesion </a></li>
+
+            <nav class="nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#registro">Registro</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#logout" class="btn-ghost">Cerrar sesión</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Carrusel: Espacio reservado para slider de imágenes -->
-    <section class="carousel">
-        <!-- Carrusel de imágenes (placeholder, sin funcionalidad) -->
-        <div class="carousel__placeholder">
-            <span>Carrusel de imágenes</span>
-        </div>
-    </section>
-
-    <!-- Sección principal de productos -->
-    <main class="main">
-        <div class="container">
-            <!-- Grid de tarjetas de producto -->
-            <section id="productos" class="products">
-                <h2 class="products__title">Productos</h2>
-                <div class="products__grid">
-                    <!-- Tarjeta de producto (ejemplo) -->
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 1</h3>
-                            <p class="product-card__price">$100.00</p>
-                            <p class="product-card__stock">Stock: 20</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 2</h3>
-                            <p class="product-card__price">$150.00</p>
-                            <p class="product-card__stock">Stock: 10</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 3</h3>
-                            <p class="product-card__price">$80.00</p>
-                            <p class="product-card__stock">Stock: 5</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 4</h3>
-                            <p class="product-card__price">$200.00</p>
-                            <p class="product-card__stock">Stock: 2</p>
-                        </div>
-                    </div>
-                                        <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 1</h3>
-                            <p class="product-card__price">$100.00</p>
-                            <p class="product-card__stock">Stock: 20</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 2</h3>
-                            <p class="product-card__price">$150.00</p>
-                            <p class="product-card__stock">Stock: 10</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 3</h3>
-                            <p class="product-card__price">$80.00</p>
-                            <p class="product-card__stock">Stock: 5</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 4</h3>
-                            <p class="product-card__price">$200.00</p>
-                            <p class="product-card__stock">Stock: 2</p>
-                        </div>
-                    </div>
-                                        <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 1</h3>
-                            <p class="product-card__price">$100.00</p>
-                            <p class="product-card__stock">Stock: 20</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 2</h3>
-                            <p class="product-card__price">$150.00</p>
-                            <p class="product-card__stock">Stock: 10</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 3</h3>
-                            <p class="product-card__price">$80.00</p>
-                            <p class="product-card__stock">Stock: 5</p>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <div class="product-card__image"></div>
-                        <div class="product-card__info">
-                            <h3 class="product-card__name">Producto 4</h3>
-                            <p class="product-card__price">$200.00</p>
-                            <p class="product-card__stock">Stock: 2</p>
-                        </div>
-                    </div>
-                    <!-- Agrega más tarjetas según sea necesario -->
+    <main>
+        <section class="hero">
+            <div class="container hero__inner">
+                <div>
+                    <h2>Gestión eficiente de inventario</h2>
+                    <p class="lead">Visualiza productos, controla stock y registra ventas desde un panel claro y rápido.</p>
                 </div>
-            </section>
+                <div class="hero__actions">
+                    <a class="btn btn-primary" href="#productos">Ver productos</a>
+                    <a class="btn btn-outline" href="#registro">Registrar venta</a>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <section id="productos" class="products container">
+            <div class="products__head">
+                <h3>Productos</h3>
+                <div class="products__controls">
+                    <label class="select">
+                        <span class="visually-hidden">Filtrar</span>
+                        <select aria-label="Filtrar productos">
+                            <option>Todos</option>
+                            <option>En stock</option>
+                            <option>Agotados</option>
+                        </select>
+                    </label>
+                      <button class="btn btn-sm" data-action="new"><i class="fas fa-plus"></i> Nuevo</button>
+                </div>
+            </div>
+
+            <div class="products__grid" aria-live="polite">
+                <!-- Ejemplos de tarjetas -->
+                <article class="card">
+                    <div class="card__media" style="background-image:linear-gradient(135deg,#eef2ff,#e6f7ff)"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Producto 1</h4>
+                        <p class="muted">SKU: IT-001</p>
+                        <div class="card__meta">
+                            <span class="price">$100.00</span>
+                            <span class="stock in-stock">20 en stock</span>
+                        </div>
+                        <div class="card__actions">
+                            <button class="btn btn-sm">Ver</button>
+                            <button class="btn btn-outline btn-sm">Editar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media" style="background-image:linear-gradient(135deg,#fff7ed,#fff1f0)"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Producto 2</h4>
+                        <p class="muted">SKU: IT-002</p>
+                        <div class="card__meta">
+                            <span class="price">$150.00</span>
+                            <span class="stock warning">10 en stock</span>
+                        </div>
+                        <div class="card__actions">
+                            <button class="btn btn-sm">Ver</button>
+                            <button class="btn btn-outline btn-sm">Editar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card__media" style="background-image:linear-gradient(135deg,#f0fdf4,#ecfeff)"></div>
+                    <div class="card__body">
+                        <h4 class="card__title">Producto 3</h4>
+                        <p class="muted">SKU: IT-003</p>
+                        <div class="card__meta">
+                            <span class="price">$80.00</span>
+                            <span class="stock low">5 en stock</span>
+                        </div>
+                        <div class="card__actions">
+                            <button class="btn btn-sm">Ver</button>
+                            <button class="btn btn-outline btn-sm">Editar</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Más tarjetas se pueden clonar/inyectar desde JS -->
+            </div>
+        </section>
     </main>
 
-    <!-- Footer: Información básica -->
     <footer class="footer">
-        <div class="container">
-            <p>© 2025 Inventary Tech. Todos los derechos reservados.</p>
+        <div class="container footer__inner">
+            <p>© 2025 Inventary Tech — Hecho con <span aria-hidden="true">♥</span></p>
+            <nav aria-label="Enlaces de pie">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#contacto">Soporte</a>
+            </nav>
         </div>
     </footer>
-</body>
-</html>
+
+        <!-- Modal: Formulario para agregar/editar producto -->
+        <div class="modal" id="productModal" aria-hidden="true">
+            <div class="modal__backdrop" data-close="true"></div>
+            <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+                <header class="modal__header">
+                    <h4 id="modalTitle">Nuevo producto</h4>
+                    <button class="modal__close" aria-label="Cerrar">×</button>
+                </header>
+                <form id="productForm" class="modal__form">
+                    <input type="hidden" name="id" />
+                    <label>
+                        Nombre
+                        <input name="name" type="text" required />
+                    </label>
+                    <label>
+                        SKU
+                        <input name="sku" type="text" />
+                    </label>
+                    <label>
+                        Precio
+                        <input name="price" type="number" step="0.01" min="0" required />
+                    </label>
+                    <label>
+                        Stock
+                        <input name="stock" type="number" step="1" min="0" required />
+                    </label>
+                    <label>
+                        Imagen (URL)
+                        <input name="image" type="url" placeholder="https://..." />
+                    </label>
+                    <div class="modal__actions">
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <button type="button" class="btn btn-outline" data-close="true">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </body>
+    </html>
