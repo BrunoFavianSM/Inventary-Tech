@@ -38,9 +38,11 @@ function seedIfEmpty() {
     return
   }
   products = [
-    { id: uid(), name: 'Producto 1', sku: 'IT-001', price: 100, stock: 20, image: '' },
-    { id: uid(), name: 'Producto 2', sku: 'IT-002', price: 150, stock: 10, image: '' },
-    { id: uid(), name: 'Producto 3', sku: 'IT-003', price: 80, stock: 5, image: '' }
+    { id: uid(), name: 'Laptop Dell Inspiron 15', sku: 'IT-004', price: 750, stock: 12, image: 'https://cdn.thewirecutter.com/wp-content/media/2024/11/cheapgaminglaptops-2048px-7981.jpg' },
+    { id: uid(), name: 'Monitor Samsung 24"', sku: 'IT-005', price: 220, stock: 7, image: 'https://cdn.memorykings.pe/files/2024/02/10/349429-MK036274C.jpg' },
+    { id: uid(), name: 'Teclado Mecánico Logitech', sku: 'IT-006', price: 95, stock: 15, image: 'https://oechsle.vteximg.com.br/arquivos/ids/16243426-1000-1000/image-a69ce9ae0b50449bac51e931b0c859ed.jpg?v=638305099450370000' },
+    { id: uid(), name: 'Mouse Inalámbrico HP', sku: 'IT-007', price: 35, stock: 3, image: 'https://media.falabella.com/falabellaPE/125240618_01/w=1500,h=1500,fit=pad' },
+    { id: uid(), name: 'Audífonos Bluetooth Sony', sku: 'IT-008', price: 60, stock: 18, image: 'https://oechsle.vteximg.com.br/arquivos/ids/19773632/imageUrl_1.jpg?v=638673304281300000' }
   ]
   saveToStorage()
 }

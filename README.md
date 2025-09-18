@@ -1,21 +1,29 @@
-# Inventary-Tech
+📦 Sistema de Inventario
 
-Rediseño ligero del frontend para un aspecto más moderno y profesional.
+Este proyecto corresponde a una página de inventario que ha sido mejorada tanto en diseño como en funcionamiento.
 
-Qué cambié:
-- Nuevo layout semántico en `index.html` (header, hero, productos, footer).
-- Estilos modernos en `styles.css` (Google Font, paleta, tarjetas, botones responsivos).
-- Pequeñas mejoras de accesibilidad y meta tags.
+✨ Cambios realizados
 
-Cómo ver localmente:
-1. Abre `index.html` en tu navegador (doble clic o "Abrir con...").
-2. Para desarrollo en vivo, puedes usar una extensión de Live Server en VS Code o cualquier servidor estático.
+Mejoras de diseño
 
-Siguientes mejoras recomendadas:
-- Agregar imágenes reales y favicon.
-- Implementar carga dinámica de productos con JavaScript o conectar a una API.
-- Añadir pruebas visuales y componentes reutilizables.
+Se añadieron degradados y difuminados en los modales y elementos principales.
 
-Si quieres, puedo:
-- Incluir un ejemplo con JavaScript que cargue tarjetas desde un JSON.
-- Generar un pequeño servidor Node static o configurar Live Server tasks.
+Se implementaron transiciones y animaciones suaves para una experiencia más dinámica.
+
+Se optimizó la disposición general de la página para mejorar la usabilidad.
+
+Gestión de productos
+
+Se agregaron nuevos productos al inventario.
+
+Cada producto cuenta ahora con su respectiva foto.
+
+Mejoras en el funcionamiento
+
+Optimización de la carga y manejo de datos.
+
+Flujo más intuitivo en la interacción con la página.
+
+🚀 Resultado
+
+La página de inventario ahora ofrece una experiencia más visual, fluida y organizada, facilitando la gestión de productos y mejorando la interacción del usuario.
